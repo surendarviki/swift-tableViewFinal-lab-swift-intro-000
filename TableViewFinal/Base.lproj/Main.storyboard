@@ -1,8 +1,142 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kfz-TH-O47">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Planets-->
+        <scene sceneID="W0C-6R-TN7">
+            <objects>
+                <tableViewController id="z9x-DL-49B" customClass="PlanetTableViewController" customModule="TableViewFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6IS-Dm-zS6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetCell" rowHeight="148" id="ZEv-sT-6b6" customClass="PlanetTableViewCell" customModule="TableViewFinal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="148"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZEv-sT-6b6" id="REg-Ke-Y42">
+                                    <frame key="frameInset" width="375" height="147"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-ch-7O8">
+                                            <frame key="frameInset" minX="23" minY="19" width="91" height="148"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqT-O4-sBJ">
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="36"/>
+                                                    <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiX-5H-uPE">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-QT-QK4">
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfI-oC-Kku">
+                                            <frame key="frameInset" minX="304" minY="63" width="42" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Unz-ch-7O8" secondAttribute="bottom" constant="-8.5" id="Zo3-pH-Jf7"/>
+                                        <constraint firstItem="Unz-ch-7O8" firstAttribute="leading" secondItem="REg-Ke-Y42" secondAttribute="leading" id="eJX-Vx-DHH"/>
+                                        <constraint firstItem="Unz-ch-7O8" firstAttribute="top" secondItem="REg-Ke-Y42" secondAttribute="top" constant="8" id="eaf-aL-gkj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="numberOfDaysFullOrbitLabel" destination="7vR-QT-QK4" id="Ovk-w1-I2H"/>
+                                    <outlet property="numberOfFacts" destination="IfI-oC-Kku" id="Hvc-FI-AfT"/>
+                                    <outlet property="numberOfMoonsLabel" destination="eiX-5H-uPE" id="Aa1-fd-vfQ"/>
+                                    <outlet property="planetNameLabel" destination="HqT-O4-sBJ" id="K8R-fG-OWy"/>
+                                    <segue destination="ycj-by-WNB" kind="show" identifier="showDetail" id="XuJ-Tz-97c"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="z9x-DL-49B" id="sK4-ii-O2c"/>
+                            <outlet property="delegate" destination="z9x-DL-49B" id="42r-Sr-ug2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Planets" id="hfx-7a-pcN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAV-P2-Vta" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="600.79999999999995" y="142.57871064467767"/>
+        </scene>
+        <!--Fact Table View Controller-->
+        <scene sceneID="BtV-Bp-F3D">
+            <objects>
+                <tableViewController id="ycj-by-WNB" customClass="FactTableViewController" customModule="TableViewFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="djP-fm-7pa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FactCell" rowHeight="155" id="ogA-M4-o3w" customClass="FactTableViewCell" customModule="TableViewFinal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="155"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ogA-M4-o3w" id="XPM-kh-sXb">
+                                    <frame key="frameInset" width="375" height="154"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9I-NZ-2wU">
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="m9I-NZ-2wU" firstAttribute="leading" secondItem="XPM-kh-sXb" secondAttribute="leading" id="9Sf-Fb-BK2"/>
+                                        <constraint firstAttribute="bottom" secondItem="m9I-NZ-2wU" secondAttribute="bottom" id="AvN-HW-u6a"/>
+                                        <constraint firstItem="m9I-NZ-2wU" firstAttribute="top" secondItem="XPM-kh-sXb" secondAttribute="top" id="fFK-DK-RPV"/>
+                                        <constraint firstAttribute="trailing" secondItem="m9I-NZ-2wU" secondAttribute="trailing" id="gkT-ug-O9f"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="factTextView" destination="m9I-NZ-2wU" id="K4G-3H-D2B"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ycj-by-WNB" id="en3-9h-K9I"/>
+                            <outlet property="delegate" destination="ycj-by-WNB" id="o0z-3F-JyA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmH-h4-0UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.8" y="141.67916041979012"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qIN-Us-w9a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kfz-TH-O47" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l8I-DM-Iy9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="z9x-DL-49B" kind="relationship" relationship="rootViewController" id="55b-Bf-xXE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nA4-lw-c5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338.39999999999998" y="142.57871064467767"/>
+        </scene>
+    </scenes>
 </document>
